@@ -1,0 +1,22 @@
+  <!-- build:js /js/vendor.min.js -->
+  <!-- bower:js -->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js /js/bootstrap.min.js -->
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js /js/app.min.js -->
+  <script src="../__js/main.js"></script>
+  <!-- endbuild -->
+  
+  <!--
+  Repository name: {{ site.github.repository_name }}
+  Jekyll environment: {{ jekyll.environment }}
+  Github environment: {{ site.github.environment }}
+  Pages environment: {{ site.github.pages_env }}
+  Build revision: {{ site.github.build_revision }}
+  PRD+WWW: {% if jekyll.environment == "production" %}true{% else %}false{% endif %}
+  -->

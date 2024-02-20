@@ -1,0 +1,21 @@
+{
+  "name": "nickpayne-prototype2",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Nick Payne <nick@nickpayne.net>"
+  ],
+  "license": "All rights reserved",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {}
+}
