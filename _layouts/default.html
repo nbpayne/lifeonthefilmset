@@ -2,23 +2,7 @@
 <html lang="en-us">
   {% include head.html %}
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          {% include header.html %}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          {{ content }}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          {% include footer.html %}
-        </div>
-      </div>
-    </div>
-    {% include foot.html %}
+    {{ content }}
   </body>
+  {% include foot.html %}
 </html>
