@@ -13,7 +13,7 @@ layout: xml
         <description>{{ site.description | strip }}</description>
         <language>en</language>
         <itunes:author>{{ site.podcast.author }}</itunes:author>
-        <itunes:image href="{{ site.url }}{{ site.baseurl }}{{ site.podcast.logo }}" />
+        <itunes:image href="{{ site.url }}/{{ site.podcast.logo }}" />
         <itunes:explicit>{{ site.podcast.explicit }}</itunes:explicit>
         <itunes:category text="{{ site.podcast.category }}" />
         <itunes:type>{{ site.podcast.type }}</itunes:type>
@@ -21,9 +21,9 @@ layout: xml
 
 {% for post in site.posts %}        
         <item>
-            <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}episodes/{{ post.id | slugify }}.mp3</guid>
+            <guid isPermaLink="true">{{ site.url }}/episodes/{{ post.id | slugify }}.mp3</guid>
             <enclosure
-                url="{{ site.url }}{{ site.baseurl }}episodes/{{ post.id | slugify }}.mp3"
+                url="{{ site.url }}/episodes/{{ post.id | slugify }}.mp3"
                 type="audio/mpeg"
                 length="{{ post.podcastBytes }}" />
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
@@ -31,10 +31,10 @@ layout: xml
             <description>{{ post.description }}</description>
             <itunes:duration>{{ post.podcastDuration }}</itunes:duration>
             <itunes:keywords>{{ post.keywords | join: "," }}</itunes:keywords>
-            <link>{{ site.url }}{{ post.id }}</link>
+            <link>{{ site.url }}/{{ post.id }}</link>
             <itunes:season>{{ post.podcastSeason }}</itunes:season>
             <itunes:epidosde>{{ post.podcastEpisode }}</itunes:epidosde>
-            <itunes:image>{{ site.url }}{{ site.baseurl }}img/{{ post.podcastSeason}}.{{ post.podcastEpisode}}.jpg</itunes:image>
+            <itunes:image>{{ site.url }}/img/{{ post.podcastSeason}}.{{ post.podcastEpisode}}.jpg</itunes:image>
         </item>
 {% endfor %}
 

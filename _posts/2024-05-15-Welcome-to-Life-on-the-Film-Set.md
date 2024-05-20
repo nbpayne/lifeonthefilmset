@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Welcome to "Life on the Film Set"
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 podcastBytes: 50
