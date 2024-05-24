@@ -9,11 +9,17 @@ h2, h3 {
   text-transform: uppercase;
 }
 
-// .navbar {
-//   margin-bottom: 1rem;
-//   margin-top: 1rem;
-// }
+.logo {
+  padding: 4rem;
+}
 
-.p-10 {
-  padding: 6rem;
+@media (min-width: 992px) {
+  .logo {
+    padding: 10rem;
+  }
+}
+
+.title {
+  margin-bottom: auto;
+  margin-top: auto;
 }
