@@ -1,7 +1,11 @@
 ---
 layout: post
 title: Welcome to "Life on the Film Set"
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: >
+  Introducing Nick Payne and George Artin, two passionate filmmakers and friends
+  connected through working on many film projects together. In this podcast, 
+  they introduce themselves and talk about what the "Life on the Film Set" 
+  podcast is about, and why they're doing it.
 podcastBytes: 50
 podcastDuration: 5
 keywords:

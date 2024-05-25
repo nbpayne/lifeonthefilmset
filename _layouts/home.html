@@ -9,6 +9,8 @@ layout: default
       </div>
     </div>
   </div>
+</div>
+<div class="container">
   <div class="header">
     <div class="row">
       <div class="col logo">
@@ -23,15 +25,15 @@ layout: default
   <div id="episodes" class="episodes">
     <div class="row">
       <div class="col">
-        <h2>Episodes</h2>
+        <h2 class="section-title">Episodes</h2>
       </div>
     </div>
 {% assign episodes = site.posts | sort: "podcastEpisode" %}
 {% for episode in episodes %}
     <div class="row">
-      <div class="col">
+      <!-- <div class="col">
         Episode IMG
-      </div>
+      </div> -->
       <div class="col">
         <h3><span class="small">Ep. {{ episode.podcastEpisode }}</span><br>
         {{ episode.title }}</h3>
@@ -41,7 +43,7 @@ layout: default
 {% if episodeDate <= now %}
         <p><a href="{{ episode.id }}">Listen here</a></p>
 {% else %}
-        <p>Coming soon</p>
+        <p><a href="{{ episode.id }}">Coming soon</a></p>
 {% endif %}
         
       </div>
@@ -51,7 +53,7 @@ layout: default
   <div id="hosts" class="hosts">
     <div class="row">
       <div class="col">
-        <h2>Hosts</h2>
+        <h2 class="section-title">Hosts</h2>
       </div>
     </div>
 {% for host in site.data.hosts %}
