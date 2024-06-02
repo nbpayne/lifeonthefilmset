@@ -1,22 +1,14 @@
 ---
 layout: default
 ---
-<div class="container-fluid">
-  <div id="nav">
-    <div class="row">
-      <div class="col">
 {% include header.html %}
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
+<div class="container mt-5">
   <div class="header">
     <div class="row">
-      <div class="col logo">
-        <img class="img-fluid" src="/img/logo.png">
+      <div class="col-sm logo">
+        <img class="img-fluid p-4 p-md-5" src="/img/logo.png">
       </div>
-      <div class="col title">
+      <div class="col-sm title text-center my-auto">
         <h1>{{ site.title }}</h1>
         {{ content }}
       </div>
@@ -30,11 +22,11 @@ layout: default
     </div>
 {% assign episodes = site.posts | sort: "podcastEpisode" %}
 {% for episode in episodes %}
-    <div class="row mb-4">
-      <div class="col">
-        <img class="img-fluid" src="https://placehold.co/400">
+    <div class="row">
+      <div class="col-sm col-lg-4 img-tile">
+        <img class="img-fluid" src="https://placehold.co/480">
       </div>
-      <div class="col">
+      <div class="col-sm col-lg-6">
         <h3><span class="small">Ep. {{ episode.podcastEpisode }}</span><br>
         {{ episode.title }}</h3>
         <p>{{ episode.description }}</p>
@@ -57,11 +49,11 @@ layout: default
       </div>
     </div>
 {% for host in site.data.hosts %}
-    <div class="row mb-4">
-      <div class="col">
-        <img class="img-fluid" src="https://placehold.co/400">
+    <div class="row">
+      <div class="col-sm col-lg-4 img-tile">
+        <img class="img-fluid" src="https://placehold.co/480">
       </div>
-      <div class="col">
+      <div class="col-sm col-lg-6">
         <h3>{{ host.name }}</h3>
         <p>{{ host.description }}</p>
       </div>
