@@ -30,10 +30,10 @@ layout: default
     </div>
 {% assign episodes = site.posts | sort: "podcastEpisode" %}
 {% for episode in episodes %}
-    <div class="row">
-      <!-- <div class="col">
-        Episode IMG
-      </div> -->
+    <div class="row mb-4">
+      <div class="col">
+        <img class="img-fluid" src="https://placehold.co/400">
+      </div>
       <div class="col">
         <h3><span class="small">Ep. {{ episode.podcastEpisode }}</span><br>
         {{ episode.title }}</h3>
@@ -57,9 +57,9 @@ layout: default
       </div>
     </div>
 {% for host in site.data.hosts %}
-    <div class="row">
+    <div class="row mb-4">
       <div class="col">
-        Host IMG
+        <img class="img-fluid" src="https://placehold.co/400">
       </div>
       <div class="col">
         <h3>{{ host.name }}</h3>
