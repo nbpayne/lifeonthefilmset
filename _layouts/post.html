@@ -1,21 +1,31 @@
 ---
 layout: default
 ---
-    <div class="container-fluid mt-5">
+    <div class="container mt-5">
       <div class="row">
         <div class="col">
-          {% include header.html %}
+          <h2 class="section-title">{{ page.title }}</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col-sm col-lg-4 img-tile">
+          <img class="img-fluid" src="https://placehold.co/480">
+        </div>
+        <div class="col-sm col-lg-8">
+          <h3>Ep. {{ page.podcastEpisode }}</h3>
+          <p>{{ page.date | date_to_string: "ordinal", "AU" }} | {{ page.podcastDuration | divided_by: 60.0 | ceil }} minutes</p>
           <p class="lead">{{ page.description }}</p>
           {{ content }}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          {% include footer.html %}
+{% assign episodeDate = page.date | date: "%Y%m%d" | integer %}
+{% assign now = site.time | date: "%Y%m%d" | integer %}
+{% if episodeDate <= now %}
+          <audio controls>
+            <source src="/episodes/{{ page.id | slugify }}.mp3" type="audio/mpeg">
+            /episodes/{{ page.id | slugify }}.mp3
+          </audio>
+{% else %}
+          <p>Coming on {{ page.date | date_to_string: "ordinal", "AU" }}</p>
+{% endif %}
         </div>
       </div>
     </div>

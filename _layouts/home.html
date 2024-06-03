@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% include header.html %}
 <div class="container mt-5">
   <div class="header">
     <div class="row">
@@ -23,7 +22,7 @@ layout: default
 {% assign episodes = site.posts | sort: "podcastEpisode" %}
 {% for episode in episodes %}
     <div class="row">
-      <div class="col-sm col-lg-4 img-tile">
+      <div class="col-sm col-lg-4 offset-lg-1 img-tile">
         <img class="img-fluid" src="https://placehold.co/480">
       </div>
       <div class="col-sm col-lg-6">
@@ -50,14 +49,26 @@ layout: default
     </div>
 {% for host in site.data.hosts %}
     <div class="row">
-      <div class="col-sm col-lg-4 img-tile">
+      <div class="col-sm col-lg-6 offset-lg-1 img-tile">
         <img class="img-fluid" src="https://placehold.co/480">
       </div>
-      <div class="col-sm col-lg-6">
+      <div class="col-sm col-lg-4">
         <h3>{{ host.name }}</h3>
         <p>{{ host.description }}</p>
       </div>
     </div>
 {% endfor %}
+  </div>
+  <div id="subscribe" class="subscribe">
+    <div class="row">
+      <div class="col">
+        <h2 class="section-title">Subscribe</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm col-lg-6 offset-lg-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur gravida arcu. Semper quis lectus nulla at volutpat diam ut. Pellentesque nec nam aliquam sem et tortor consequat id porta. Etiam erat velit scelerisque in. Nec dui nunc mattis enim ut. Gravida dictum fusce ut placerat orci nulla pellentesque. Lobortis elementum nibh tellus molestie. Viverra justo nec ultrices dui sapien eget mi. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Fermentum dui faucibus in ornare quam viverra orci sagittis. Tempus egestas sed sed risus pretium quam vulputate dignissim. Id semper risus in hendrerit gravida rutrum. Quam pellentesque nec nam aliquam sem et tortor consequat id. Volutpat consequat mauris nunc congue. Dignissim cras tincidunt lobortis feugiat. Mollis aliquam ut porttitor leo a diam. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Pellentesque id nibh tortor id.</p>
+      </div>
+    </div>
   </div>
 </div>
