@@ -34,7 +34,7 @@ layout: default
 {% if episodeDate <= now %}
         <p><a href="{{ episode.id }}">Listen here</a></p>
 {% else %}
-        <p><a href="{{ episode.id }}">Coming soon</a></p>
+        <p><a href="{{ episode.id }}">Coming on {{ episode.date | date_to_string: "ordinal", "AU" }}</a></p>
 {% endif %}
         
       </div>

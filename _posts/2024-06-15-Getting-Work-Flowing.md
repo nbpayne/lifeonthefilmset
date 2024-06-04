@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting work on set flowing
+title: Getting work flowing
 description: >
   Film sets are busy places with lots of things going on at once. How do 
   organise a film set to ensure that all this different work flows together to
