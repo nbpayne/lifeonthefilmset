@@ -608,11 +608,14 @@
 // // stylelint-enable value-keyword-case
 // $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
 // $font-family-code:            var(--#{$prefix}font-monospace) !default;
+$font-family-sans-serif: "Balto-Light", sans-serif;
+
 
 // // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // // $font-size-base affects the font size of the body text
 // $font-size-root:              null !default;
 // $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1.25rem;
 // $font-size-sm:                $font-size-base * .875 !default;
 // $font-size-lg:                $font-size-base * 1.25 !default;
 
@@ -654,9 +657,9 @@
 // $headings-font-family:        null !default;
 // $headings-font-style:         null !default;
 // $headings-font-weight:        500 !default;
-$headings-font-family:        "Anton", sans-serif;
-$headings-font-style:         normal;
-$headings-font-weight:        400;
+$headings-font-family:        "Balto-Black", sans-serif;
+// $headings-font-style:         normal;
+// $headings-font-weight:        700;
 // $headings-line-height:        1.2 !default;
 // $headings-color:              inherit !default;
 // // scss-docs-end headings-variables

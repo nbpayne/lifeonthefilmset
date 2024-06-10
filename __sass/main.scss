@@ -1,23 +1,30 @@
+// Colours
+$caribbean-current: #3c6e72ff;
+$raisin-black: #32292fff;
+$mint-green: #d1e3ddff;
+$flame: #e4572eff;
+$orange-web: #f3a712ff;
+
 // Components
 
 body {
-  background-color: #112;
+  background-color: $raisin-black;
   background-image: url(../img/bg.svg);
   background-repeat: repeat-y;
-  color: #fff;
+  color: $mint-green;
 }
 
 h1 {
-  color: #3E6F72;
+  color: $flame;
 }
 
 h2 {
-  color: #3E6F72;
+  color: $flame;
   text-transform: uppercase;
 }
 
 h3 {
-  color: #3E6F72;
+  color: $orange-web;
 }
 
 .img-tile img {
@@ -49,6 +56,7 @@ h3 {
 }
 
 .section-title, {
-  font-size: 18vw;
+  font-size: 12vw;
+  line-height: normal;
   text-align: center;
 }

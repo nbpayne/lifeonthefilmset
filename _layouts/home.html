@@ -23,11 +23,11 @@ layout: default
 {% for episode in episodes %}
     <div class="row">
       <div class="col-sm col-lg-4 offset-lg-1 img-tile">
-        <img class="img-fluid" src="https://placehold.co/480">
+        <a href="{{ episode.id }}"><img class="img-fluid" src="/img/episodes/{{ episode.podcastSeason}}.{{ episode.podcastEpisode }}.png"></a>
       </div>
       <div class="col-sm col-lg-6">
-        <h3><span class="small">Ep. {{ episode.podcastEpisode }}</span><br>
-        {{ episode.title }}</h3>
+        <h3><span class="small">Ep. {{ episode.podcastEpisode }}</span> {{ episode.title }}</h3>
+        <p>{{ episode.date | date_to_string: "ordinal", "AU" }} | {{ episode.podcastDuration | divided_by: 60.0 | ceil }} minutes</p>
         <p>{{ episode.description }}</p>
 {% assign episodeDate = episode.date | date: "%Y%m%d" | integer %}
 {% assign now = site.time | date: "%Y%m%d" | integer %}
@@ -36,7 +36,6 @@ layout: default
 {% else %}
         <p><a href="{{ episode.id }}">Coming on {{ episode.date | date_to_string: "ordinal", "AU" }}</a></p>
 {% endif %}
-        
       </div>
     </div>
 {% endfor %}

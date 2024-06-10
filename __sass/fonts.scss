@@ -1,0 +1,220 @@
+
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-Light.eot');
+    src: local('Balto Light'), local('Balto-Light'),
+        url('../fonts/Balto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-Light.woff2') format('woff2'),
+        url('../fonts/Balto-Light.woff') format('woff'),
+        url('../fonts/Balto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-Thin.eot');
+    src: local('Balto Thin'), local('Balto-Thin'),
+        url('../fonts/Balto-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-Thin.woff2') format('woff2'),
+        url('../fonts/Balto-Thin.woff') format('woff'),
+        url('../fonts/Balto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-Book.eot');
+    src: local('Balto Book'), local('Balto-Book'),
+        url('../fonts/Balto-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-Book.woff2') format('woff2'),
+        url('../fonts/Balto-Book.woff') format('woff'),
+        url('../fonts/Balto-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-Ultra.eot');
+    src: local('Balto Ultra'), local('Balto-Ultra'),
+        url('../fonts/Balto-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-Ultra.woff2') format('woff2'),
+        url('../fonts/Balto-Ultra.woff') format('woff'),
+        url('../fonts/Balto-Ultra.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-Bold.eot');
+    src: local('Balto Bold'), local('Balto-Bold'),
+        url('../fonts/Balto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-Bold.woff2') format('woff2'),
+        url('../fonts/Balto-Bold.woff') format('woff'),
+        url('../fonts/Balto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-SuperItalic.eot');
+    src: local('Balto Super Italic'), local('Balto-SuperItalic'),
+        url('../fonts/Balto-SuperItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-SuperItalic.woff2') format('woff2'),
+        url('../fonts/Balto-SuperItalic.woff') format('woff'),
+        url('../fonts/Balto-SuperItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-MediumItalic.eot');
+    src: local('Balto Medium Italic'), local('Balto-MediumItalic'),
+        url('../fonts/Balto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Balto-MediumItalic.woff') format('woff'),
+        url('../fonts/Balto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-LightItalic.eot');
+    src: local('Balto Light Italic'), local('Balto-LightItalic'),
+        url('../fonts/Balto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-LightItalic.woff2') format('woff2'),
+        url('../fonts/Balto-LightItalic.woff') format('woff'),
+        url('../fonts/Balto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-UltraItalic.eot');
+    src: local('Balto Ultra Italic'), local('Balto-UltraItalic'),
+        url('../fonts/Balto-UltraItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-UltraItalic.woff2') format('woff2'),
+        url('../fonts/Balto-UltraItalic.woff') format('woff'),
+        url('../fonts/Balto-UltraItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-BoldItalic.eot');
+    src: local('Balto Bold Italic'), local('Balto-BoldItalic'),
+        url('../fonts/Balto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Balto-BoldItalic.woff') format('woff'),
+        url('../fonts/Balto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-ThinItalic.eot');
+    src: local('Balto Thin Italic'), local('Balto-ThinItalic'),
+        url('../fonts/Balto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Balto-ThinItalic.woff') format('woff'),
+        url('../fonts/Balto-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-Medium.eot');
+    src: local('Balto Medium'), local('Balto-Medium'),
+        url('../fonts/Balto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-Medium.woff2') format('woff2'),
+        url('../fonts/Balto-Medium.woff') format('woff'),
+        url('../fonts/Balto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-BlackItalic.eot');
+    src: local('Balto Black Italic'), local('Balto-BlackItalic'),
+        url('../fonts/Balto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Balto-BlackItalic.woff') format('woff'),
+        url('../fonts/Balto-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+*/
+
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-Black.eot');
+    src: local('Balto Black'), local('Balto-Black'),
+        url('../fonts/Balto-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-Black.woff2') format('woff2'),
+        url('../fonts/Balto-Black.woff') format('woff'),
+        url('../fonts/Balto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-BookItalic.eot');
+    src: local('Balto Book Italic'), local('Balto-BookItalic'),
+        url('../fonts/Balto-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-BookItalic.woff2') format('woff2'),
+        url('../fonts/Balto-BookItalic.woff') format('woff'),
+        url('../fonts/Balto-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Balto';
+    src: url('../fonts/Balto-Super.eot');
+    src: local('Balto Super'), local('Balto-Super'),
+        url('../fonts/Balto-Super.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Balto-Super.woff2') format('woff2'),
+        url('../fonts/Balto-Super.woff') format('woff'),
+        url('../fonts/Balto-Super.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+*/

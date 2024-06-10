@@ -34,7 +34,7 @@ layout: xml
             <link>{{ site.url }}/{{ post.id }}</link>
             <itunes:season>{{ post.podcastSeason }}</itunes:season>
             <itunes:epidosde>{{ post.podcastEpisode }}</itunes:epidosde>
-            <itunes:image>{{ site.url }}/img/{{ post.podcastSeason}}.{{ post.podcastEpisode}}.jpg</itunes:image>
+            <itunes:image>{{ site.url }}/img/episodes/{{ post.podcastSeason}}.{{ post.podcastEpisode}}.png</itunes:image>
         </item>
 {% endfor %}
 

@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var child = require('child_process');
-var csslint = require('gulp-csslint');
 var cleanCSS = require('gulp-clean-css');
 var del = require('del');
 var gulpif = require('gulp-if');
@@ -12,7 +11,6 @@ var merge = require('merge-stream');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass')(require('sass'));
 var sourcemaps = require('gulp-sourcemaps');
-var stylish = require('csslint-stylish');
 var uglify = require('gulp-uglify');
 var useref = require('gulp-useref');
 var wiredep = require('wiredep').stream;
@@ -41,8 +39,7 @@ gulp.task('css', function () {
     // Build app css files
     gulp.src('__sass/*.scss')
       .pipe(sass())
-      .pipe(csslint())
-      .pipe(csslint.formatter(stylish))
+      // lint SCSS
       .pipe(sourcemaps.init())
       .pipe(cleanCSS())
       .pipe(rename({suffix:'.min'}))
