@@ -6,4 +6,7 @@ layout: home
 
 With Nick Payne and George Artin.
 
-<a class="btn btn-primary" href="#subscribe">Subscribe</a>
+[Subscribe](#subscribe){: .btn.btn-primary }
+
+Made by humans without the use of AI
+{: .small }

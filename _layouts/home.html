@@ -53,7 +53,8 @@ layout: default
       </div>
       <div class="col-sm col-lg-4">
         <h3>{{ host.name }}</h3>
-        <p>{{ host.description }}</p>
+        {% assign paragraphs = host.description | newline_to_br | split: '<br />' %}
+        {% for paragraph in paragraphs %}<p>{{ paragraph | markdownify }}</p>{% endfor %}
       </div>
     </div>
 {% endfor %}
@@ -66,7 +67,7 @@ layout: default
     </div>
     <div class="row">
       <div class="col-sm col-lg-6 offset-lg-3">
-        {% include hosts.html %}
+        {% include platforms.html %}
       </div>
     </div>
   </div>
