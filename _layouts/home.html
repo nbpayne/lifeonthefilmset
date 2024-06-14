@@ -53,8 +53,7 @@ layout: default
       </div>
       <div class="col-sm col-lg-4">
         <h3>{{ host.name }}</h3>
-        {% assign paragraphs = host.description | newline_to_br | split: '<br />' %}
-        {% for paragraph in paragraphs %}<p>{{ paragraph | markdownify }}</p>{% endfor %}
+        {{ host.description | markdownify }}
       </div>
     </div>
 {% endfor %}
