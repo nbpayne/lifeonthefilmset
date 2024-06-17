@@ -21,5 +21,7 @@
     "sass": "^1.76.0",
     "wiredep": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2"
+  }
 }

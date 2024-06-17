@@ -28,8 +28,8 @@ layout: default
 {% endif %}
           <nav aria-label="Post navigation">
             <ul class="pagination justify-content-center mt-4">
-              <li class="page-item{% if page.previous %}{% else %} disabled{% endif %}"><a class="page-link" href="{{ page.previous.url }}">Previous</a></li>
-              <li class="page-item{% if page.next %}{% else %} disabled{% endif %}"><a class="page-link" href="{{ page.next.url }}">Next</a></li>
+              <li class="page-item{% if page.previous %}{% else %} disabled{% endif %}"><a class="page-link{% if page.previous %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.previous.url }}">Previous</a></li>
+              <li class="page-item{% if page.next %}{% else %} disabled{% endif %}"><a class="page-link{% if page.next %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.next.url }}">Next</a></li>
             </ul>
           </nav>
         </div>

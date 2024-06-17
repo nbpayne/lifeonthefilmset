@@ -25,9 +25,27 @@ gulp.task('clean', function () {
   ]);
 });
 
+// Copy Font Awesome fonts and SCSS to project
+gulp.task('fontawesome', function () {
+  return merge(
+    gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+      .pipe(gulp.dest('fonts')) //,
+    // gulp.src('node_modules/@fortawesome/fontawesome-free/scss/*')
+    //   .pipe(gulp.dest('__sass/fontawesome'))
+  )
+});
+
 // Build css files
 gulp.task('css', function () {
   return merge(
+    // Build fontawesome css files
+    gulp.src('__sass/fontawesome/*.scss')
+      .pipe(sass())
+      .pipe(sourcemaps.init())
+      .pipe(cleanCSS())
+      .pipe(rename({suffix:'.min'}))
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest('css/fontawesome')),
     // Build vendor css files
     gulp.src('__sass/vendor/*.scss')
       .pipe(sass())
@@ -108,6 +126,7 @@ gulp.task('wiredep', function() {
 gulp.task('serve',
   gulp.series(
     'clean', 
+    'fontawesome',
     gulp.parallel('css', 'wiredep'), 
     'js',
     gulp.parallel('jekyll-serve', 'watch')
