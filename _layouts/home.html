@@ -54,6 +54,9 @@ layout: default
       <div class="col-sm col-lg-6">
         <h3>{{ host.name }}</h3>
         {{ host.description | markdownify }}
+        {% if host.instagram %}
+        <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/{{ host.instagram }}/">{{ host.instagram }}</a></p>
+        {% endif %}
       </div>
     </div>
 {% endfor %}
@@ -66,6 +69,9 @@ layout: default
     </div>
     <div class="row">
       <div class="col-sm col-lg-8 offset-lg-2">
+        <p class="text-center">
+          Available on all good podcasting platforms.
+        </p>
         {% include platforms.html %}
       </div>
     </div>

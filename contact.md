@@ -8,17 +8,23 @@ We believe the stuff we talk about in this podcoast is important and needs to be
 
 Here's a bunch of ways you can get involved.
 
-## Facebook
+## Ways to get involved
 {: .pt-3 }
 
-Eiusmod dolore adipisicing elit deserunt dolor sit incididunt esse eiusmod adipisicing enim nisi laborum amet consequat ullamco laboris reprehenderit consectetur anim dolor tempor minim.
+### Facebook
 
-## Instagram
+Our Facebook page is the place to discuss the ideas we bring up in the podcast. Every fortnight we'll post about the latest episode on Facebook and invite your comments. Like our page to keep up and let us know your thoughts on each episode as it arrives.
+
+{% include facebook.html handle="lifeonthefilmset" %}
+
+### Instagram
 {: .pt-3 }
 
-Lorem ipsum id deserunt dolore ullamco dolore exercitation id in sint enim sunt deserunt officia sed aliqua proident ea reprehenderit nulla commodo elit laboris ex in nisi occaecat culpa amet nisi elit labore.
+Instagram is the place to help share the love. We'll post highlights from each episode as they're released. If what we're saying resonates then please share and repost so that others can find out about us and listen in too.
 
-## Direct Message
+{% include instagram.html handle="lifeonthefilmset" %}
+
+### Direct Message
 {: .pt-3 }
 
 If you'd like to talk to us directly then send us a DM via Instagram or Facebook and we'll respond. If you'd like we can then provide other contact details to move to a method that suits you.
