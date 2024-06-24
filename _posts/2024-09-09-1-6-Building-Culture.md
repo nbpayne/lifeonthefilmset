@@ -12,11 +12,12 @@ description: >
 podcastBytes: 50
 podcastDuration: 5
 keywords:
-- Lorem
-- ipsum
-- dolor
-- sit
-- amet
+- Film Industry
+- Set Life
+- Culture
+episodeType: full
 podcastSeason: 1
 podcastEpisode: 6
 ---
+
+Made by humans without the help of AI.

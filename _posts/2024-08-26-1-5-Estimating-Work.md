@@ -10,11 +10,13 @@ description: >
 podcastBytes: 50
 podcastDuration: 5
 keywords:
-- Lorem
-- ipsum
-- dolor
-- sit
-- amet
+- Film Industry
+- Set Life
+- Estimation
+- Planning
+episodeType: full
 podcastSeason: 1
 podcastEpisode: 5
 ---
+
+Made by humans without the help of AI.

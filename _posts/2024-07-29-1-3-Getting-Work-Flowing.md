@@ -9,11 +9,13 @@ description: >
 podcastBytes: 50
 podcastDuration: 2520
 keywords:
-- Lorem
-- ipsum
-- dolor
-- sit
-- amet
+- Film Industry
+- Set Life
+- Workflow
+- Lean Manufacturing
+episodeType: full
 podcastSeason: 1
 podcastEpisode: 3
 ---
+
+Made by humans without the help of AI.

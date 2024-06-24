@@ -19,7 +19,7 @@ layout: default
         <h2 class="section-title">Episodes</h2>
       </div>
     </div>
-{% assign episodes = site.posts | sort: "podcastEpisode" %}
+{% assign episodes = site.posts | where: "episodeType", "full" | sort: "podcastEpisode" %}
 {% for episode in episodes %}
     <div class="row">
       <div class="col-sm col-lg-4 offset-lg-1 img-tile">
@@ -27,7 +27,7 @@ layout: default
       </div>
       <div class="col-sm col-lg-6">
         <h3><span class="small">Ep. {{ episode.podcastEpisode }}</span> {{ episode.title }}</h3>
-        <p>{{ episode.date | date_to_string: "ordinal", "AU" }} | {{ episode.podcastDuration | divided_by: 60.0 | ceil }} minutes</p>
+        <p>{{ episode.date | date_to_string: "ordinal", "AU" }}{% comment %} | {{ episode.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endcomment %}</p>
         <p>{{ episode.description }}</p>
 {% assign episodeDate = episode.date | date: "%Y%m%d" | integer %}
 {% assign now = site.time | date: "%Y%m%d" | integer %}
@@ -49,13 +49,13 @@ layout: default
 {% for host in site.data.hosts %}
     <div class="row">
       <div class="col-sm col-lg-4 offset-lg-1 img-tile">
-        <img class="img-fluid" src="https://placehold.co/480">
+        <img class="img-fluid" src="/img/hosts/{{ host.name | slugify }}.jpg">
       </div>
       <div class="col-sm col-lg-6">
         <h3>{{ host.name }}</h3>
         {{ host.description | markdownify }}
         {% if host.instagram %}
-        <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/{{ host.instagram }}/">{{ host.instagram }}</a></p>
+        <p><i class="fa-brands fa-instagram"></i> <a target="_blank" href="https://www.instagram.com/{{ host.instagram }}/">{{ host.instagram }}</a></p>
         {% endif %}
       </div>
     </div>
@@ -69,10 +69,13 @@ layout: default
     </div>
     <div class="row">
       <div class="col-sm col-lg-8 offset-lg-2">
+        <p class="text-center lead">Coming soon on all good podcasting platforms.</p>
+{% comment %}
         <p class="text-center">
           Available on all good podcasting platforms.
         </p>
         {% include platforms.html %}
+{% endcomment %}
       </div>
     </div>
   </div>

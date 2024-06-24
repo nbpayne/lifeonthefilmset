@@ -13,22 +13,23 @@ layout: default
         </div>
         <div class="col-sm col-lg-8">
           <h3><span class="small">Ep. {{ page.podcastEpisode }}</span> {{ page.title }}</h3>
-          <p>{{ page.date | date_to_string: "ordinal", "AU" }} | {{ page.podcastDuration | divided_by: 60.0 | ceil }} minutes</p>
+          <p>{{ page.date | date_to_string: "ordinal", "AU" }}{% comment %} | {{ episode.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endcomment %}</p>
           <p class="lead">{{ page.description }}</p>
           {{ content }}
 {% assign episodeDate = page.date | date: "%Y%m%d" | integer %}
 {% assign now = site.time | date: "%Y%m%d" | integer %}
 {% if episodeDate <= now %}
-          <audio controls>
+          <audio controls class="mb-3">
             <source src="/episodes/{{ page.id | slugify }}.mp3" type="audio/mpeg">
             /episodes/{{ page.id | slugify }}.mp3
           </audio>
+{% include platforms.html %}
 {% else %}
           <p>Coming on {{ page.date | date_to_string: "ordinal", "AU" }}</p>
 {% endif %}
           <nav aria-label="Post navigation">
             <ul class="pagination justify-content-center mt-4">
-              <li class="page-item{% if page.previous %}{% else %} disabled{% endif %}"><a class="page-link{% if page.previous %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.previous.url }}">Previous</a></li>
+              <li class="page-item{% if page.previous.episodeType == "full" %}{% else %} disabled{% endif %}"><a class="page-link{% if page.previous.episodeType == "full"  %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.previous.url }}">Previous</a></li>
               <li class="page-item{% if page.next %}{% else %} disabled{% endif %}"><a class="page-link{% if page.next %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.next.url }}">Next</a></li>
             </ul>
           </nav>

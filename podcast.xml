@@ -19,7 +19,10 @@ layout: xml
         <itunes:type>{{ site.podcast.type }}</itunes:type>
         <spotify:countryOfOrigin>au</spotify:countryOfOrigin>
 
-{% for post in site.posts %}        
+{% for post in site.posts %}
+    {% assign episodeDate = post.date | date: "%Y%m%d" | integer %}
+    {% assign now = site.time | date: "%Y%m%d" | integer %}
+    {% if episodeDate <= now %}
         <item>
             <guid isPermaLink="true">{{ site.url }}/episodes/{{ post.id | slugify }}.mp3</guid>
             <enclosure
@@ -31,11 +34,13 @@ layout: xml
             <description>{{ post.description | strip }}</description>
             <itunes:duration>{{ post.podcastDuration }}</itunes:duration>
             <itunes:keywords>{{ post.keywords | join: "," }}</itunes:keywords>
+            <itunes:episodeType>{{ post.episodeType }}</itunes:episodeType>
             <link>{{ site.url }}/{{ post.id }}</link>
             <itunes:season>{{ post.podcastSeason }}</itunes:season>
             <itunes:epidosde>{{ post.podcastEpisode }}</itunes:epidosde>
             <itunes:image>{{ site.url }}/img/episodes/{{ post.podcastSeason}}.{{ post.podcastEpisode}}.png</itunes:image>
         </item>
+    {% endif %}
 {% endfor %}
 
     </channel>
