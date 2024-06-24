@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: home
 ---
-
-# Hello, film crew.
 
 {{ site.description }}{: .lead }
 
-Coming soon.
+With Nick Payne and George Artin.
 
-Follow us on [Instagram](https://www.instagram.com/lifeonthefilmset/) and [Facebook](https://www.facebook.com/lifeonthefilmset).
+[Subscribe](#subscribe){: .btn.btn-secondary }
+
+Made by humans without the use of AI
+{: .small }

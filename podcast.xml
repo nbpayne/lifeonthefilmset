@@ -1,0 +1,47 @@
+---
+layout: xml
+---
+<rss xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:spotify="http://www.spotify.com/ns/rss"
+     xmlns:psc="http://podlove.org/simple-chapters/"
+     version="2.0">
+    <channel>
+        <title>{{ site.title }}</title>
+        <link>{{ site.url }}</link>
+        <description>{{ site.description | strip }}</description>
+        <language>en</language>
+        <itunes:author>{{ site.podcast.author }}</itunes:author>
+        <itunes:image href="{{ site.url }}/{{ site.podcast.logo }}" />
+        <itunes:explicit>{{ site.podcast.explicit }}</itunes:explicit>
+        <itunes:category text="{{ site.podcast.category }}" />
+        <itunes:type>{{ site.podcast.type }}</itunes:type>
+        <spotify:countryOfOrigin>au</spotify:countryOfOrigin>
+
+{% for post in site.posts %}
+    {% assign episodeDate = post.date | date: "%Y%m%d" | integer %}
+    {% assign now = site.time | date: "%Y%m%d" | integer %}
+    {% if episodeDate <= now %}
+        <item>
+            <guid isPermaLink="true">{{ site.url }}/episodes/{{ post.id | slugify }}.mp3</guid>
+            <enclosure
+                url="{{ site.url }}/episodes/{{ post.id | slugify }}.mp3"
+                type="audio/mpeg"
+                length="{{ post.podcastBytes }}" />
+            <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+            <title>{{ post.title }}</title>
+            <description>{{ post.description | strip }}</description>
+            <itunes:duration>{{ post.podcastDuration }}</itunes:duration>
+            <itunes:keywords>{{ post.keywords | join: "," }}</itunes:keywords>
+            <itunes:episodeType>{{ post.episodeType }}</itunes:episodeType>
+            <link>{{ site.url }}/{{ post.id }}</link>
+            <itunes:season>{{ post.podcastSeason }}</itunes:season>
+            <itunes:epidosde>{{ post.podcastEpisode }}</itunes:epidosde>
+            <itunes:image>{{ site.url }}/img/episodes/{{ post.podcastSeason}}.{{ post.podcastEpisode}}.png</itunes:image>
+        </item>
+    {% endif %}
+{% endfor %}
+
+    </channel>
+</rss>

@@ -1,0 +1,38 @@
+---
+layout: default
+---
+    <div class="container mt-5 pt-5">
+      <div class="row">
+        <div class="col">
+          <h2 class="section-title">{{ page.title }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm col-lg-4 img-tile">
+          <img class="img-fluid" src="/img/episodes/{{ page.podcastSeason}}.{{ page.podcastEpisode }}.png">
+        </div>
+        <div class="col-sm col-lg-8">
+          <h3><span class="small">Ep. {{ page.podcastEpisode }}</span> {{ page.title }}</h3>
+          <p>{{ page.date | date_to_string: "ordinal", "AU" }}{% comment %} | {{ episode.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endcomment %}</p>
+          <p class="lead">{{ page.description }}</p>
+          {{ content }}
+{% assign episodeDate = page.date | date: "%Y%m%d" | integer %}
+{% assign now = site.time | date: "%Y%m%d" | integer %}
+{% if episodeDate <= now %}
+          <audio controls class="mb-3">
+            <source src="/episodes/{{ page.id | slugify }}.mp3" type="audio/mpeg">
+            /episodes/{{ page.id | slugify }}.mp3
+          </audio>
+{% include platforms.html %}
+{% else %}
+          <p>Coming on {{ page.date | date_to_string: "ordinal", "AU" }}</p>
+{% endif %}
+          <nav aria-label="Post navigation">
+            <ul class="pagination justify-content-center mt-4">
+              <li class="page-item{% if page.previous.episodeType == "full" %}{% else %} disabled{% endif %}"><a class="page-link{% if page.previous.episodeType == "full"  %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.previous.url }}">Previous</a></li>
+              <li class="page-item{% if page.next %}{% else %} disabled{% endif %}"><a class="page-link{% if page.next %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.next.url }}">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>

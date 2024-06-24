@@ -17,11 +17,19 @@ title: "\"Life on the Film Set\" Podcast"
 email: listen@lifeonthefilmset.com
 description: > # this means to ignore newlines until "baseurl:"
   A podcast about how to work on a film set and be great at it.
-baseurl: # the subpath of your site, e.g. /blog
+baseurl: 
 url: 'https://www.lifeonthefilmset.com' # the base hostname & protocol for your site, e.g. http://example.com
 repository: 'nbpayne/lifeonthefilmset'
 locale: en_AU
 formid: 
+
+podcast:
+  author: lifeonthefilmset
+  logo: img/logo.jpg
+  category: TV &amp; Film
+  explicit: false
+  type: episodic
+  countryOfOrigin: au
 
 # Build settings
 markdown: kramdown

@@ -1,5 +1,67 @@
+// Colours
+$caribbean-current: #3c6e72ff;
+$raisin-black: #32292fff;
+$mint-green: #d1e3ddff;
+$flame: #e4572eff;
+$orange-web: #f3a712ff;
+
 // Components
+
+body {
+  background-color: $raisin-black;
+  background-image: url(../img/bg.svg);
+  background-repeat: repeat-y;
+  color: $mint-green;
+}
+
+h1 {
+  color: $flame;
+}
+
+h2 {
+  color: $flame;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: $orange-web;
+}
+
+.img-tile img {
+  padding-bottom: 2rem;
+}
+
+.logo {
+  // padding: 4rem;
+  background-image: url(../img/logo-bg.svg);
+  background-position: center;
+  background-size: 100%;
+  padding: 5rem;
+}
+
+@media (min-width: 992px) {
+  .logo {
+    padding: 10rem;
+  }
+}
+
 .navbar {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  background-color: white;
+}
+
+.page-item {
+  text-align: center;
+  width: 6rem;
+}
+
+.title {
+  // margin-bottom: auto;
+  // margin-top: auto;
+  // text-align: center;
+}
+
+.section-title, {
+  font-size: 12vw;
+  line-height: normal;
+  text-align: center;
 }

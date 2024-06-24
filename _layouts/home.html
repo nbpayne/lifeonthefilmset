@@ -1,0 +1,82 @@
+---
+layout: default
+---
+<div class="container mt-5">
+  <div class="header">
+    <div class="row">
+      <div class="col-sm logo">
+        <img class="img-fluid" src="/img/logo.png">
+      </div>
+      <div class="col-sm title text-center my-auto">
+        <h1>{{ site.title }}</h1>
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  <div id="episodes" class="episodes">
+    <div class="row">
+      <div class="col">
+        <h2 class="section-title">Episodes</h2>
+      </div>
+    </div>
+{% assign episodes = site.posts | where: "episodeType", "full" | sort: "podcastEpisode" %}
+{% for episode in episodes %}
+    <div class="row">
+      <div class="col-sm col-lg-4 offset-lg-1 img-tile">
+        <a href="{{ episode.id }}"><img class="img-fluid" src="/img/episodes/{{ episode.podcastSeason}}.{{ episode.podcastEpisode }}.png"></a>
+      </div>
+      <div class="col-sm col-lg-6">
+        <h3><span class="small">Ep. {{ episode.podcastEpisode }}</span> {{ episode.title }}</h3>
+        <p>{{ episode.date | date_to_string: "ordinal", "AU" }}{% comment %} | {{ episode.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endcomment %}</p>
+        <p>{{ episode.description }}</p>
+{% assign episodeDate = episode.date | date: "%Y%m%d" | integer %}
+{% assign now = site.time | date: "%Y%m%d" | integer %}
+{% if episodeDate <= now %}
+        <p><a href="{{ episode.id }}">Listen here</a></p>
+{% else %}
+        <p><a href="{{ episode.id }}">Coming on {{ episode.date | date_to_string: "ordinal", "AU" }}</a></p>
+{% endif %}
+      </div>
+    </div>
+{% endfor %}
+  </div>
+  <div id="hosts" class="hosts">
+    <div class="row">
+      <div class="col">
+        <h2 class="section-title">Hosts</h2>
+      </div>
+    </div>
+{% for host in site.data.hosts %}
+    <div class="row">
+      <div class="col-sm col-lg-4 offset-lg-1 img-tile">
+        <img class="img-fluid" src="/img/hosts/{{ host.name | slugify }}.jpg">
+      </div>
+      <div class="col-sm col-lg-6">
+        <h3>{{ host.name }}</h3>
+        {{ host.description | markdownify }}
+        {% if host.instagram %}
+        <p><i class="fa-brands fa-instagram"></i> <a target="_blank" href="https://www.instagram.com/{{ host.instagram }}/">{{ host.instagram }}</a></p>
+        {% endif %}
+      </div>
+    </div>
+{% endfor %}
+  </div>
+  <div id="subscribe" class="subscribe">
+    <div class="row">
+      <div class="col">
+        <h2 class="section-title">Subscribe</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm col-lg-8 offset-lg-2">
+        <p class="text-center lead">Coming soon on all good podcasting platforms.</p>
+{% comment %}
+        <p class="text-center">
+          Available on all good podcasting platforms.
+        </p>
+        {% include platforms.html %}
+{% endcomment %}
+      </div>
+    </div>
+  </div>
+</div>
