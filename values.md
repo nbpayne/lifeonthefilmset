@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 'These are the things we value'
+image: /img/logo.png
 ---
 
 We created the “Life on the Film Set” podcast as a way to embody what we believe about working in the film industry. Our values drive not only what we do, but how we do it.

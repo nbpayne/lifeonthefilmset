@@ -1,5 +1,6 @@
 ---
 layout: home
+image: /img/logo.png
 ---
 
 {{ site.description }}{: .lead }
