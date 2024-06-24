@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 'Join the conver-sation'
+image: /img/logo.png
 ---
 
 We believe the stuff we talk about in this podcoast is important and needs to be discussed. For this reason we'd love you to get involved and share your thoughts with us and others.

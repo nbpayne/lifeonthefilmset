@@ -7,6 +7,7 @@ description: >
   our art instead of giving everything the care and attention it deserves. So 
   how do you set up the environment on set to create the environment for 
   innovation to occur? Hint... it's fuelling people for collaboration.
+image: /img/episodes/1.4.png
 podcastBytes: 50
 podcastDuration: 5
 keywords:

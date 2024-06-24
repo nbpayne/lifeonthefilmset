@@ -7,6 +7,7 @@ description: >
   order to meet a schedule that's plainly ridiculous?! In this episode we talk
   about some techniques for estimating and planning work in order to create 
   more realistic plans resulting in better work being created.
+image: /img/episodes/1.5.png
 podcastBytes: 50
 podcastDuration: 5
 keywords:

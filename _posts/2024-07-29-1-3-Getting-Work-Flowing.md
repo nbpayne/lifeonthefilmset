@@ -6,6 +6,7 @@ description: >
   organise a film set to ensure that all this different work flows together to
   achieve the making of a film? When is the right time to muck in and help 
   others and when is it better to give people space to do their own job?
+image: /img/episodes/1.3.png
 podcastBytes: 50
 podcastDuration: 2520
 keywords:

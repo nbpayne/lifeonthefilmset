@@ -7,6 +7,7 @@ description: >
   talk about using "intent" as a way of directing others and communicating what
   you intend to do. We also touch on how to have "hard" conversations with
   others.
+image: /img/episodes/1.2.png
 podcastBytes: 50
 podcastDuration: 5
 keywords:
