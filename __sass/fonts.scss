@@ -1,11 +1,8 @@
 
 @font-face {
-    font-family: 'Balto';
-    src: url('../fonts/Balto-Light.eot');
-    src: local('Balto Light'), local('Balto-Light'),
-        url('../fonts/Balto-Light.eot?#iefix') format('embedded-opentype'),
+    font-family: 'Balto-Light';
+    src: 
         url('../fonts/Balto-Light.woff2') format('woff2'),
-        url('../fonts/Balto-Light.woff') format('woff'),
         url('../fonts/Balto-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
@@ -180,12 +177,9 @@
 */
 
 @font-face {
-    font-family: 'Balto';
-    src: url('../fonts/Balto-Black.eot');
-    src: local('Balto Black'), local('Balto-Black'),
-        url('../fonts/Balto-Black.eot?#iefix') format('embedded-opentype'),
+    font-family: 'Balto-Black';
+    src: 
         url('../fonts/Balto-Black.woff2') format('woff2'),
-        url('../fonts/Balto-Black.woff') format('woff'),
         url('../fonts/Balto-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
