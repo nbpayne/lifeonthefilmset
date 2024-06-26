@@ -19,6 +19,7 @@ keywords:
 episodeType: full
 podcastSeason: 1
 podcastEpisode: 6
+podcastDate: 2024-09-09 08:00:00 +1000
 ---
 
 Made by humans without the help of AI.

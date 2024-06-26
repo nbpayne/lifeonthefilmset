@@ -20,16 +20,16 @@ layout: xml
         <spotify:countryOfOrigin>au</spotify:countryOfOrigin>
 
 {% for post in site.posts %}
-    {% assign episodeDate = post.date | date: "%Y%m%d" | integer %}
+    {% assign episodeDate = post.podcastDate | date: "%Y%m%d" | integer %}
     {% assign now = site.time | date: "%Y%m%d" | integer %}
     {% if episodeDate <= now %}
         <item>
-            <guid isPermaLink="true">{{ site.url }}/episodes/{{ post.id | slugify }}.mp3</guid>
+            <guid isPermaLink="true">{{ site.url }}/audio/{{ post.id | slugify }}.mp3</guid>
             <enclosure
-                url="{{ site.url }}/episodes/{{ post.id | slugify }}.mp3"
+                url="{{ site.url }}/audio/{{ post.id | slugify }}.mp3"
                 type="audio/mpeg"
                 length="{{ post.podcastBytes }}" />
-            <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+            <pubDate>{{ post.podcastDate | date_to_rfc822 }}</pubDate>
             <title>{{ post.title }}</title>
             <description>{{ post.description | strip }}</description>
             <itunes:duration>{{ post.podcastDuration }}</itunes:duration>
@@ -37,7 +37,7 @@ layout: xml
             <itunes:episodeType>{{ post.episodeType }}</itunes:episodeType>
             <link>{{ site.url }}/{{ post.id }}</link>
             <itunes:season>{{ post.podcastSeason }}</itunes:season>
-            <itunes:epidosde>{{ post.podcastEpisode }}</itunes:epidosde>
+            <itunes:episode>{{ post.podcastEpisode }}</itunes:episode>
             <itunes:image>{{ site.url }}/img/episodes/{{ post.podcastSeason}}.{{ post.podcastEpisode}}.png</itunes:image>
         </item>
     {% endif %}

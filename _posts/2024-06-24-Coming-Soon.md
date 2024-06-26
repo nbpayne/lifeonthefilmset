@@ -7,13 +7,14 @@ description: >
   effectively and positively with the people around you.
 image: /img/episodes/1.0.png
 podcastBytes: 50
-podcastDuration: 2715
+podcastDuration: 60
 keywords:
 - Film Industry
 - Set Life
 episodeType: trailer
 podcastSeason: 1
 podcastEpisode: 0
+podcastDate: 2024-06-24 08:00:00 +1000
 ---
 
 Made by humans without the help of AI.

@@ -25,7 +25,7 @@ formid:
 
 podcast:
   author: lifeonthefilmset
-  logo: img/logo.jpg
+  logo: img/logo.png
   category: TV &amp; Film
   explicit: false
   type: episodic
@@ -47,7 +47,7 @@ exclude:
   - package.json
   - README.md
   - yarn.lock
-permalink: /:year/:month/:day/:slug
+# permalink: /:year/:month/:day/:slug
 defaults:
   -
     scope:
