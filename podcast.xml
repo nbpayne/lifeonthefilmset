@@ -35,7 +35,7 @@ layout: xml
             <itunes:duration>{{ post.podcastDuration }}</itunes:duration>
             <itunes:keywords>{{ post.keywords | join: "," }}</itunes:keywords>
             <itunes:episodeType>{{ post.episodeType }}</itunes:episodeType>
-            <link>{{ site.url }}/{{ post.id }}</link>
+            <link>{{ site.url }}{{ post.id }}</link>
             <itunes:season>{{ post.podcastSeason }}</itunes:season>
             <itunes:episode>{{ post.podcastEpisode }}</itunes:episode>
             <itunes:image>{{ site.url }}/img/episodes/{{ post.podcastSeason}}.{{ post.podcastEpisode}}.png</itunes:image>
