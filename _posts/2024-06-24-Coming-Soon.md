@@ -6,7 +6,7 @@ description: >
   about technical skills, but rather the human skills you need to work 
   effectively and positively with the people around you.
 image: /img/episodes/1.0.png
-podcastBytes: 50
+podcastBytes: 2401920
 podcastDuration: 60
 keywords:
 - Film Industry
