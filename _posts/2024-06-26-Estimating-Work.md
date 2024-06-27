@@ -19,6 +19,7 @@ episodeType: full
 podcastSeason: 1
 podcastEpisode: 5
 podcastDate: 2024-08-26 08:00:00 +1000
+audioFile: estimating-work
 ---
 
 Made by humans without the help of AI.

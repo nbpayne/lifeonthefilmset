@@ -15,6 +15,7 @@ episodeType: trailer
 podcastSeason: 1
 podcastEpisode: 0
 podcastDate: 2024-06-24 08:00:00 +1000
+audioFile: coming-soon
 ---
 
 Made by humans without the help of AI.

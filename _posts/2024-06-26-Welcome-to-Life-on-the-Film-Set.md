@@ -16,6 +16,7 @@ episodeType: full
 podcastSeason: 1
 podcastEpisode: 1
 podcastDate: 2024-07-15 08:00:00 +1000
+audioFile: welcome
 ---
 
 Made by humans without the help of AI.

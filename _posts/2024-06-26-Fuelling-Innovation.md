@@ -18,6 +18,7 @@ episodeType: full
 podcastSeason: 1
 podcastEpisode: 4
 podcastDate: 2024-08-12 08:00:00 +1000
+audioFile: fuelling-innovation
 ---
 
 Made by humans without the use of AI.
