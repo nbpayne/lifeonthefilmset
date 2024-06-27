@@ -41,7 +41,7 @@ layout: xml
             {% if post.podcastEpisode > 0 %}
             <itunes:episode>{{ post.podcastEpisode }}</itunes:episode>
             {% endif %}
-            <itunes:image>{{ site.url }}/img/episodes/{{ post.podcastSeason}}.{{ post.podcastEpisode}}@2x.png</itunes:image>
+            <itunes:image>{{ site.url }}/img/episodes/{{ post.podcastSeason}}.{{ post.podcastEpisode}}-2x.png</itunes:image>
         </item>
     {% endif %}
 {% endfor %}
