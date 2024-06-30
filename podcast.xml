@@ -13,6 +13,7 @@ layout: xml
         <description>{{ site.description | strip }}</description>
         <language>en</language>
         <itunes:author>{{ site.podcast.author }}</itunes:author>
+        <itunes:email>{{ site.email }}</itunes:email>
         <itunes:image href="{{ site.url }}/{{ site.podcast.logo }}" />
         <itunes:explicit>{{ site.podcast.explicit }}</itunes:explicit>
         <itunes:category text="{{ site.podcast.category }}" />
