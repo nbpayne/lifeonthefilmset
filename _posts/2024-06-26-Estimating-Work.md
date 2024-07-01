@@ -18,7 +18,7 @@ keywords:
 episodeType: full
 podcastSeason: 1
 podcastEpisode: 5
-podcastDate: 2024-08-26 08:00:00 +1000
+podcastDate: 2024-08-26 08:00:00
 audioFile: estimating-work
 ---
 

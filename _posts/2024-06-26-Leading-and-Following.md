@@ -17,7 +17,7 @@ keywords:
 episodeType: full
 podcastSeason: 1
 podcastEpisode: 2
-podcastDate: 2024-07-15 08:00:01 +1000
+podcastDate: 2024-07-15 08:00:01
 audioFile: leading-and-following
 ---
 
