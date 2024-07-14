@@ -13,7 +13,7 @@ layout: default
         </div>
         <div class="col-sm col-lg-8">
           <h3><span class="small">Ep. {{ page.podcastEpisode }}</span> {{ page.title }}</h3>
-          <p>{{ page.podcastDate | date_to_long_string: "ordinal", "AU" }}{% comment %} | {{ episode.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endcomment %}</p>
+          <p>{{ page.podcastDate | date_to_long_string: "ordinal", "AU" }}{% if page.podcastDuration > 0 %} | {{ page.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endif %}</p>
           <p class="lead">{{ page.description }}</p>
           {{ content }}
 {% assign episodeDate = page.podcastDate | date: "%Y%m%d" | integer %}

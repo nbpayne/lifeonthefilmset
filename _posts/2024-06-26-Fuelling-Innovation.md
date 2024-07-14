@@ -9,7 +9,7 @@ description: >
   innovation to occur? Hint... it's fuelling people for collaboration.
 image: /img/episodes/1.4.png
 podcastBytes: 50
-podcastDuration: 5
+podcastDuration: 0
 keywords:
 - Film Industry
 - Set Life

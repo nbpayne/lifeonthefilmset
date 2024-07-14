@@ -11,7 +11,7 @@ description: >
   maximise your changes of creating a film that is great.
 image: /img/episodes/1.6.png
 podcastBytes: 50
-podcastDuration: 5
+podcastDuration: 0
 keywords:
 - Film Industry
 - Set Life

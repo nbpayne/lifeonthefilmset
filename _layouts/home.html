@@ -27,7 +27,7 @@ layout: default
       </div>
       <div class="col-sm col-lg-6">
         <h3><span class="small">Ep. {{ episode.podcastEpisode }}</span> {{ episode.title }}</h3>
-        <p>{{ episode.podcastDate | date_to_long_string: "ordinal", "AU" }}{% comment %} | {{ episode.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endcomment %}</p>
+        <p>{{ episode.podcastDate | date_to_long_string: "ordinal", "AU" }}{% if episode.podcastDuration > 0 %} | {{ episode.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endif %}</p>
         <p>{{ episode.description }}</p>
 {% assign episodeDate = episode.podcastDate | date: "%Y%m%d" | integer %}
 {% assign now = site.time | date: "%Y%m%d" | integer %}

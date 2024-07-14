@@ -8,7 +8,7 @@ description: >
   others and when is it better to give people space to do their own job?
 image: /img/episodes/1.3.png
 podcastBytes: 50
-podcastDuration: 2520
+podcastDuration: 0
 keywords:
 - Film Industry
 - Set Life

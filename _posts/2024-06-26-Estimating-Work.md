@@ -9,7 +9,7 @@ description: >
   more realistic plans resulting in better work being created.
 image: /img/episodes/1.5.png
 podcastBytes: 50
-podcastDuration: 5
+podcastDuration: 0
 keywords:
 - Film Industry
 - Set Life

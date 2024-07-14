@@ -21,7 +21,7 @@ baseurl:
 url: 'https://www.lifeonthefilmset.com' # the base hostname & protocol for your site, e.g. http://example.com
 repository: 'nbpayne/lifeonthefilmset'
 locale: en_AU
-formid: 
+timezoe: Australia/Sydney
 
 podcast:
   author: lifeonthefilmset
