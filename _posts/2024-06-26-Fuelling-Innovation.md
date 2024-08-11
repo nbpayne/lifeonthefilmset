@@ -8,8 +8,8 @@ description: >
   how do you set up the environment on set to create the environment for 
   innovation to occur? Hint... it's fuelling people for collaboration.
 image: /img/episodes/1.4.png
-podcastBytes: 50
-podcastDuration: 0
+podcastBytes: 129939840
+podcastDuration: 3249
 keywords:
 - Film Industry
 - Set Life
@@ -17,7 +17,7 @@ keywords:
 episodeType: full
 podcastSeason: 1
 podcastEpisode: 4
-podcastDate: 2024-08-12 08:00:00
+podcastDate: 2024-08-11 12:00:00
 audioFile: fuelling-innovation
 ---
 
