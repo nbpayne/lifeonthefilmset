@@ -8,8 +8,8 @@ description: >
   about some techniques for estimating and planning work in order to create 
   more realistic plans resulting in better work being created.
 image: /img/episodes/1.5.png
-podcastBytes: 50
-podcastDuration: 0
+podcastBytes: 61919520
+podcastDuration: 3096
 keywords:
 - Film Industry
 - Set Life
@@ -18,7 +18,7 @@ keywords:
 episodeType: full
 podcastSeason: 1
 podcastEpisode: 5
-podcastDate: 2024-08-26 08:00:00
+podcastDate: 2024-08-25 08:00:00
 audioFile: estimating-work
 ---
 
