@@ -10,8 +10,8 @@ description: >
   "culture". In this episode we talk about how to create culture in order to 
   maximise your chances of creating a film that is great.
 image: /img/episodes/1.6.png
-podcastBytes: 50
-podcastDuration: 0
+podcastBytes: 58532160
+podcastDuration: 2927
 keywords:
 - Film Industry
 - Set Life
@@ -19,8 +19,12 @@ keywords:
 episodeType: full
 podcastSeason: 1
 podcastEpisode: 6
-podcastDate: 2024-09-09 08:00:00
+podcastDate: 2024-09-08 08:00:00
 audioFile: building-culture
 ---
+
+Further watching:
+
+- The Surprising Truth About What Motivates Us by Dan Pink: [https://youtu.be/KgGhSOAtAyQ?si=ArPLddCWNhbXCzHS](https://youtu.be/KgGhSOAtAyQ?si=ArPLddCWNhbXCzHS){: target="_blank" }
 
 Made by humans without the help of AI.
