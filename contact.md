@@ -25,6 +25,13 @@ Instagram is the place to help share the love. We'll post highlights from each e
 
 {% include instagram.html handle="lifeonthefilmset" %}
 
+### TikTok
+{: ,pt-3 }
+
+We're also on TikTok where we'll post highlights from each episodes as practical tips on how to be great on a film set. If you like what you see then please share so that others can enjoy it too.
+
+{% include tiktok.html handle="lifeonthefilmset" %}
+
 ### Direct Message
 {: .pt-3 }
 
