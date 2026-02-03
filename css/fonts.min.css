@@ -1,2 +1,2 @@
-@font-face{font-family:Balto-Light;src:url(../fonts/Balto-Light.woff2) format("woff2"),url(../fonts/Balto-Light.ttf) format("truetype");font-weight:300;font-style:normal}@font-face{font-family:Balto-Black;src:url(../fonts/Balto-Black.woff2) format("woff2"),url(../fonts/Balto-Black.ttf) format("truetype");font-weight:900;font-style:normal}
+@font-face{font-family:Balto-Light;font-style:normal;font-weight:300;src:url(../fonts/Balto-Light.woff2) format("woff2"),url(../fonts/Balto-Light.ttf) format("truetype")}@font-face{font-family:Balto-Black;font-style:normal;font-weight:900;src:url(../fonts/Balto-Black.woff2) format("woff2"),url(../fonts/Balto-Black.ttf) format("truetype")}
 /*# sourceMappingURL=fonts.min.css.map */
