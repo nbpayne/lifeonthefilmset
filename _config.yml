@@ -31,6 +31,12 @@ podcast:
   type: episodic
   countryOfOrigin: au
 
+collections:
+  articles:
+    output: true
+  episodes: 
+    output: true
+
 # Build settings
 markdown: kramdown
 plugins:
