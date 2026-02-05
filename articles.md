@@ -13,6 +13,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 {: .lead }
 
 {% for article in site.articles %}
-  <h2>{{ article.title }}</h2>
-  <p>Hello world.</p>
+  <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+  <p>{{ article.date }}</p>
 {% endfor %}

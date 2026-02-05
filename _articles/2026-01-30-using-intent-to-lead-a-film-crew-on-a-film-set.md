@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: article
 title: Using "intent" to lead a film crew on a film set
+author: Nick Payne
 ---
 
 Being successful on set requires the ability to work well with others. Delivering something that will engage and thrill audiences is never the result of any one person, but is always the result of an entire crew working together.

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+    <div class="container mt-5 pt-5">
+      <div class="row">
+        <div class="col">
+          <h2 class="section-title">{{ page.title }}</h2>
+        </div>
+      </div>
+    <div class="row">
+        <div class="col-sm col-lg-4 img-tile">
+          <img class="img-fluid" src="/img/episodes/{{ page.podcastSeason}}.{{ page.podcastEpisode }}.png">
+        </div>
+        <div class="col-sm col-lg-8">
+          <h3>{{ page.title }}</h3>
+          <p>{{ page.date | date_to_long_string: "ordinal", "AU" }} by {{ page.author }}</p>
+          {{ content }}
+          <nav aria-label="Post navigation">
+            <ul class="pagination justify-content-center mt-4">
+              <li class="page-item{% if page.next.episodeType == "full" %}{% else %} disabled{% endif %}"><a class="page-link{% if page.next.episodeType == "full"  %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.next.url }}">Previous</a></li>
+              <li class="page-item{% if page.previous.episodeType == "full" %}{% else %} disabled{% endif %}"><a class="page-link{% if page.previous.episodeType == "full" %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.previous.url }}">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
