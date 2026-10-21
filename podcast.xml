@@ -23,7 +23,9 @@ layout: xml
         <itunes:type>{{ site.podcast.type }}</itunes:type>
         <spotify:countryOfOrigin>au</spotify:countryOfOrigin>
 
-{% assign episodes = site.posts | sort: "podcastEpisode" %}
+{% assign seasons = site.posts | map: "podcastSeason" | uniq | sort %}
+{% for season in seasons %}
+{% assign episodes = site.posts | where: "podcastSeason", season | sort: "podcastEpisode" %}
 {% for post in episodes %}
     {% assign episodeDate = post.podcastDate | date: "%Y%m%d" | integer %}
     {% assign now = site.time | date: "%Y%m%d" | integer %}
@@ -35,7 +37,7 @@ layout: xml
                 type="audio/mpeg"
                 length="{{ post.podcastBytes }}" />
             <pubDate>{{ post.podcastDate | date_to_rfc822 }}</pubDate>
-            <title>{{ post.title }}</title>
+            <title>{{ post.title }}{% if post.guest %} | {{ post.guest }}{% endif %}</title>
             <description>{{ post.description | strip }}</description>
             <itunes:duration>{{ post.podcastDuration }}</itunes:duration>
             <itunes:keywords>{{ post.keywords | join: "," }}</itunes:keywords>
@@ -48,6 +50,7 @@ layout: xml
             <itunes:image href="{{ site.url }}/img/episodes/{{ post.podcastSeason}}.{{ post.podcastEpisode}}-2x.png" />
         </item>
     {% endif %}
+{% endfor %}
 {% endfor %}
 
     </channel>

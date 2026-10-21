@@ -12,8 +12,8 @@ layout: default
           <img class="img-fluid" src="/img/episodes/{{ page.podcastSeason}}.{{ page.podcastEpisode }}.png">
         </div>
         <div class="col-sm col-lg-8">
-          <h3><span class="small">Ep. {{ page.podcastEpisode }}</span> {{ page.title }}</h3>
-          <p>{{ page.podcastDate | date_to_long_string: "ordinal", "AU" }}{% if page.podcastDuration > 0 %} | {{ page.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endif %}</p>
+          <h3><span class="small">S{{ page.podcastSeason }} Ep. {{ page.podcastEpisode }}</span> {{ page.title }}</h3>
+          <p>{{ page.podcastDate | date_to_long_string: "ordinal", "AU" }}{% if page.guest %} | {{ page.guest }}{% endif %}{% if page.podcastDuration > 0 %} | {{ page.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endif %}</p>
           <p class="lead">{{ page.description }}</p>
           {{ content }}
 {% assign episodeDate = page.podcastDate | date: "%Y%m%d" | integer %}
@@ -27,10 +27,28 @@ layout: default
 {% else %}
           <p>Coming on {{ page.podcastDate | date_to_long_string: "ordinal", "AU" }}</p>
 {% endif %}
+{% assign season1episodes = site.posts | where: "episodeType", "full" | where: "podcastSeason", 1 | sort: "podcastEpisode" %}
+{% assign season2episodes = site.posts | where: "episodeType", "full" | where: "podcastSeason", 2 | sort: "podcastEpisode" %}
+{% assign allEpisodes = season1episodes | concat: season2episodes %}
+{% for episode in allEpisodes %}
+{% if episode.url == page.url %}
+{% assign currentIndex = forloop.index0 %}
+{% endif %}
+{% endfor %}
+{% if currentIndex > 0 %}
+{% assign previousIndex = currentIndex | minus: 1 %}
+{% assign previousEpisode = allEpisodes[previousIndex] %}
+{% endif %}
+{% if currentIndex %}
+{% assign nextIndex = currentIndex | plus: 1 %}
+{% if nextIndex < allEpisodes.size %}
+{% assign nextEpisode = allEpisodes[nextIndex] %}
+{% endif %}
+{% endif %}
           <nav aria-label="Post navigation">
             <ul class="pagination justify-content-center mt-4">
-              <li class="page-item{% if page.next.episodeType == "full" %}{% else %} disabled{% endif %}"><a class="page-link{% if page.next.episodeType == "full"  %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.next.url }}">Previous</a></li>
-              <li class="page-item{% if page.previous.episodeType == "full" %}{% else %} disabled{% endif %}"><a class="page-link{% if page.previous.episodeType == "full" %}{% else %}  text-bg-secondary{% endif %}" href="{{ page.previous.url }}">Next</a></li>
+              <li class="page-item{% unless previousEpisode %} disabled{% endunless %}"><a class="page-link{% unless previousEpisode %} text-bg-secondary{% endunless %}" href="{{ previousEpisode.url }}">Previous</a></li>
+              <li class="page-item{% unless nextEpisode %} disabled{% endunless %}"><a class="page-link{% unless nextEpisode %} text-bg-secondary{% endunless %}" href="{{ nextEpisode.url }}">Next</a></li>
             </ul>
           </nav>
         </div>

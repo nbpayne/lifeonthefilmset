@@ -61,7 +61,28 @@ h3 {
 }
 
 .section-title, {
-  font-size: 12vw;
+  font-size: 8vw;
   line-height: normal;
   text-align: center;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid $caribbean-current;
+
+  .nav-link {
+    color: $mint-green;
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: $orange-web;
+      border-color: $caribbean-current $caribbean-current transparent;
+    }
+
+    &.active {
+      color: $raisin-black;
+      background-color: $flame;
+      border-color: $flame $flame $caribbean-current;
+    }
+  }
 }

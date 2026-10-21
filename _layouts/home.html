@@ -19,26 +19,28 @@ layout: default
         <h2 class="section-title">Episodes</h2>
       </div>
     </div>
-{% assign episodes = site.posts | where: "episodeType", "full" | sort: "podcastEpisode" %}
-{% for episode in episodes %}
-    <div class="row">
-      <div class="col-sm col-lg-4 offset-lg-1 img-tile">
-        <a href="{{ episode.id }}"><img class="img-fluid" src="/img/episodes/{{ episode.podcastSeason}}.{{ episode.podcastEpisode }}.png"></a>
+    <ul class="nav nav-tabs justify-content-center mb-4" id="seasonTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="season2-tab" data-bs-toggle="tab" data-bs-target="#season2" type="button" role="tab" aria-controls="season2" aria-selected="true">Season 2</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="season1-tab" data-bs-toggle="tab" data-bs-target="#season1" type="button" role="tab" aria-controls="season1" aria-selected="false">Season 1</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="seasonTabContent">
+      <div class="tab-pane fade show active" id="season2" role="tabpanel" aria-labelledby="season2-tab">
+{% assign season2episodes = site.posts | where: "episodeType", "full" | where: "podcastSeason", 2 | sort: "podcastEpisode" %}
+{% for episode in season2episodes %}
+{% include episode-card.html episode=episode %}
+{% endfor %}
       </div>
-      <div class="col-sm col-lg-6">
-        <h3><span class="small">Ep. {{ episode.podcastEpisode }}</span> {{ episode.title }}</h3>
-        <p>{{ episode.podcastDate | date_to_long_string: "ordinal", "AU" }}{% if episode.podcastDuration > 0 %} | {{ episode.podcastDuration | divided_by: 60.0 | ceil }} minutes{% endif %}</p>
-        <p>{{ episode.description }}</p>
-{% assign episodeDate = episode.podcastDate | date: "%Y%m%d" | integer %}
-{% assign now = site.time | date: "%Y%m%d" | integer %}
-{% if episodeDate <= now %}
-        <p><a href="{{ episode.id }}">Listen here</a></p>
-{% else %}
-        <p><a href="{{ episode.id }}">Coming on {{ episode.podcastDate | date_to_long_string: "ordinal", "AU" }}</a></p>
-{% endif %}
+      <div class="tab-pane fade" id="season1" role="tabpanel" aria-labelledby="season1-tab">
+{% assign season1episodes = site.posts | where: "episodeType", "full" | where: "podcastSeason", 1 | sort: "podcastEpisode" %}
+{% for episode in season1episodes %}
+{% include episode-card.html episode=episode %}
+{% endfor %}
       </div>
     </div>
-{% endfor %}
   </div>
   <div id="hosts" class="hosts">
     <div class="row">
