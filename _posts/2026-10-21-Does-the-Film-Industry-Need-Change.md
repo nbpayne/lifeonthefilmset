@@ -15,7 +15,7 @@ keywords:
 episodeType: full
 podcastSeason: 2
 podcastEpisode: 6
-podcastDate: 2026-12-10 08:00:00
+podcastDate: 2026-12-10 08:00:00 +11:00
 audioFile: does-the-film-industry-need-change
 ---
 

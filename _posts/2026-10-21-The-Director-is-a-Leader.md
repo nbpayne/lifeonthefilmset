@@ -17,7 +17,7 @@ keywords:
 episodeType: full
 podcastSeason: 2
 podcastEpisode: 2
-podcastDate: 2026-11-12 08:00:00
+podcastDate: 2026-11-12 08:00:00 +11:00
 audioFile: the-director-is-a-leader
 ---
 

@@ -17,7 +17,7 @@ keywords:
 episodeType: full
 podcastSeason: 1
 podcastEpisode: 4
-podcastDate: 2024-08-11 12:00:00
+podcastDate: 2024-08-11 12:00:00 +10:00
 audioFile: fuelling-innovation
 ---
 

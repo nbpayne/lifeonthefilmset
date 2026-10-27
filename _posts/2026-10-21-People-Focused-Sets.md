@@ -18,7 +18,7 @@ keywords:
 episodeType: full
 podcastSeason: 2
 podcastEpisode: 4
-podcastDate: 2026-11-26 08:00:00
+podcastDate: 2026-11-26 08:00:00 +11:00
 audioFile: people-focused-sets
 ---
 

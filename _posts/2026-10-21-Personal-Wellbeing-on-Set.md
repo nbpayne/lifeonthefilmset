@@ -17,7 +17,7 @@ keywords:
 episodeType: full
 podcastSeason: 2
 podcastEpisode: 3
-podcastDate: 2026-11-19 08:00:00
+podcastDate: 2026-11-19 08:00:00 +11:00
 audioFile: personal-wellbeing-on-set
 ---
 

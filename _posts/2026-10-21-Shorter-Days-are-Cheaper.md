@@ -19,7 +19,7 @@ keywords:
 episodeType: full
 podcastSeason: 2
 podcastEpisode: 5
-podcastDate: 2026-12-03 08:00:00
+podcastDate: 2026-12-03 08:00:00 +11:00
 audioFile: shorter-days-are-cheaper
 ---
 

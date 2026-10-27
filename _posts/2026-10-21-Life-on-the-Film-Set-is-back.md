@@ -16,7 +16,7 @@ keywords:
 episodeType: full
 podcastSeason: 2
 podcastEpisode: 1
-podcastDate: 2026-11-05 08:00:00
+podcastDate: 2026-11-05 08:00:00 +11:00
 audioFile: life-on-the-film-set-is-back
 ---
 

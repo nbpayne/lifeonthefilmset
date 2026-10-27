@@ -17,7 +17,7 @@ keywords:
 episodeType: full
 podcastSeason: 1
 podcastEpisode: 3
-podcastDate: 2024-07-28 18:00:00
+podcastDate: 2024-07-28 18:00:00 +10:00
 audioFile: getting-work-flowing
 ---
 

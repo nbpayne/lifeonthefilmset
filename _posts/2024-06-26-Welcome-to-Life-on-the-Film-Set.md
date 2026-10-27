@@ -15,7 +15,7 @@ keywords:
 episodeType: full
 podcastSeason: 1
 podcastEpisode: 1
-podcastDate: 2024-07-14 22:00:00
+podcastDate: 2024-07-14 22:00:00 +10:00
 audioFile: welcome
 ---
 
