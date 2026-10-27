@@ -8,7 +8,7 @@ description: >
   Producers who create sets that take into account the wellbeing of people 
   create better work. In this episode producer Yolandi Franken talks about the 
   value of people focused sets and gives advice on how to talk to producers 
-  about thing you need to work at your best.
+  about the things you need to work at your best.
 image: /img/episodes/2.4.png
 podcastBytes: 131975040
 podcastDuration: 3299
